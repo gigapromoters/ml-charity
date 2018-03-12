@@ -108,7 +108,7 @@ def evaluate(results, accuracy, f1):
 
     # Create patches for the legend
     # Legend doesn't appear for some reason, so just output text
-    print("Legend:")
+    print("Legend (pl.legend() doesn't seem to draw legend):")
     patches = []
     for i, learner in enumerate(results.keys()):
         patches.append(mpatches.Patch(color = colors[i], label = learner))
